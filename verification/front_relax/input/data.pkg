@@ -2,4 +2,5 @@
  &PACKAGES
   useGMRedi=.TRUE.,
   useKPP=.FALSE.,
+  useMNC=.TRUE.,
  &
