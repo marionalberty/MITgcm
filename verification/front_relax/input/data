@@ -25,7 +25,6 @@
  implicitFreeSurface=.TRUE.,
  implicitDiffusion=.TRUE.,
  readBinaryPrec=64,
- writeBinaryPrec=64,
  &
 
 # Elliptic solver parameters
