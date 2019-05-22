@@ -22,6 +22,7 @@
  implicitFreeSurface=.TRUE.,
  implicitDiffusion=.TRUE.,
  readBinaryPrec=64,
+ writeBinaryPrec=64,
  &
 
 # Elliptic solver parameters
@@ -33,13 +34,13 @@
 # Time stepping parameters
  &PARM03
  startTime=0.,
- nTimeSteps=30,
- deltaT=60.,
+ nTimeSteps=24,
+ deltaT=10.,
  cAdjFreq=-1.,
  abEps=0.1,
  pChkptFreq=0.,
  chkptFreq =0.,
- dumpFreq=1800.,
+ dumpFreq=120.,
  monitorSelect=1,
  monitorFreq=1.,
  &
