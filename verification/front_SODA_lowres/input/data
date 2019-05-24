@@ -1,0 +1,64 @@
+# ====================
+# | Model parameters |
+# ====================
+#
+# Continuous equation parameters
+ &PARM01
+ viscAr=1.E-6,
+ viscAh=1.E-6,
+ no_slip_sides=.FALSE.,
+ no_slip_bottom=.FALSE.,
+ diffKrT=3.E-5,
+ diffKrS=3.E-5,
+ diffKhT=0.E3,
+ diffKhS=0.E3,
+ beta=0.E-11,
+ f0  =1.E-4,
+ gravity=9.81,
+ eosType='TEOS10',
+ rhoConst=1000.,
+ rhoNil=1000.,
+ rigidLid=.FALSE.,
+ implicitFreeSurface=.TRUE.,
+ implicitDiffusion=.TRUE.,
+ readBinaryPrec=64,
+ writeBinaryPrec=64,
+ useSingleCpuIO=.TRUE.,
+ &
+
+# Elliptic solver parameters
+ &PARM02
+ cg2dMaxIters=1000,
+ cg2dTargetResidual=1.E-13,
+ &
+
+# Time stepping parameters
+ &PARM03
+ startTime=0.,
+ nTimeSteps=24,
+ deltaT=10.,
+ cAdjFreq=-1.,
+ abEps=0.1,
+ pChkptFreq=0.,
+ chkptFreq =0.,
+ dumpFreq=120.,
+ monitorSelect=1,
+ monitorFreq=1.,
+ &
+
+# Gridding parameters
+ &PARM04
+ usingCartesianGrid=.TRUE.,
+ delRfile = 'dr_SODA2.bin',
+ delX = 1*10.E3,
+ delYfile = 'dy_SODA2.bin',
+ &
+
+# Input datasets
+ &PARM05
+ bathyFile       = 'topog_SODA2.bin',
+ hydrogThetaFile = 'theta_SODA2.bin',
+ hydrogSaltFile  = 'salt_SODA2.bin',
+ uVelInitFile    = 'uvel_SODA2.bin',
+ pSurfInitFile   = 'eta_SODA2.bin',
+ &
