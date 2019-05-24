@@ -21,6 +21,8 @@
  rigidLid=.FALSE.,
  implicitFreeSurface=.TRUE.,
  implicitDiffusion=.TRUE.,
+ tempAdvScheme=33,
+ saltAdvScheme=33,
  readBinaryPrec=64,
  writeBinaryPrec=64,
  useSingleCpuIO=.TRUE.,
