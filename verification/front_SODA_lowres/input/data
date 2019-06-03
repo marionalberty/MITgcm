@@ -52,7 +52,7 @@
  &PARM04
  usingCartesianGrid=.TRUE.,
  delRfile = 'dz.bin',
- delX = 200.,
+ dXspacing = 200.,
  delYfile = 'dy.bin',
  &
 
