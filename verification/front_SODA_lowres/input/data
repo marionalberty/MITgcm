@@ -18,6 +18,7 @@
  eosType='TEOS10',
  rhoConst=1000.,
  rhoNil=1000.,
+ staggerTimeStep=.TRUE.,
  rigidLid=.FALSE.,
  implicitFreeSurface=.TRUE.,
  implicitDiffusion=.TRUE.,
