@@ -38,13 +38,13 @@
 # Time stepping parameters
  &PARM03
  startTime=0.,
- nTimeSteps=3600,
+ nTimeSteps=86400,
  deltaT=1.,
  cAdjFreq=-1.,
  abEps=0.1,
  pChkptFreq=86400.,
  chkptFreq =900.,
- dumpFreq=1800.,
+ dumpFreq=3600.,
  monitorSelect=1,
  monitorFreq=1.,
  &
