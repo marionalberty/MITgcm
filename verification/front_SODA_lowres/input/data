@@ -12,7 +12,7 @@
  diffKrS=1.E-8,
  diffKhT=1.E-6,
  diffKhS=1.E-8,
- beta=0.E-11,
+ beta=7.E-12,
  f0  =1.38E-4,
  gravity=9.81,
  eosType='TEOS10',
@@ -37,8 +37,8 @@
 
 # Time stepping parameters
  &PARM03
- startTime=86400.,
- nTimeSteps=518400,
+ startTime=0.,
+ nTimeSteps=172800.,
  deltaT=1.,
  cAdjFreq=-1.,
  abEps=0.1,
