@@ -19,7 +19,7 @@
  staggerTimeStep=.TRUE.,
  rigidLid=.FALSE.,
  implicitFreeSurface=.TRUE.,
-# implicitDiffusion=.TRUE.,
+ nonHydrostatic=.TRUE.,
  tempAdvScheme=33,
  saltAdvScheme=33,
  readBinaryPrec=64,
@@ -61,5 +61,5 @@
  hydrogThetaFile = 'theta.bin',
  hydrogSaltFile  = 'salt.bin',
  uVelInitFile    = 'uvel.bin',
-# pSurfInitFile   = 'eta.bin',
+ pSurfInitFile   = 'eta.bin',
  &
