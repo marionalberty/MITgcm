@@ -4,8 +4,8 @@
 #
 # Continuous equation parameters
  &PARM01
- viscAr=2E1,
- viscAh=1E-4,
+ viscAh=2E1,
+ viscAr=1E-4,
  no_slip_sides=.FALSE.,
  no_slip_bottom=.FALSE.,
  diffKrT=1.E-6,
