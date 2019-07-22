@@ -49,7 +49,7 @@ CEOP
      &           nSx =   1,
      &           nSy =   1,
      &           nPx =   1,
-     &           nPy =   2,
+     &           nPy =   3,
      &           Nx  = sNx*nSx*nPx,
      &           Ny  = sNy*nSy*nPy,
      &           Nr  =  25)

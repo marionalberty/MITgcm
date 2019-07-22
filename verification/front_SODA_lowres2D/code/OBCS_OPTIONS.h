@@ -20,13 +20,13 @@ C This include hooks to the Orlanski Open Boundary Radiation code
 
 C Enable OB values to be prescribed via external fields that are read
 C from a file
-#undef ALLOW_OBCS_PRESCRIBE
+#define ALLOW_OBCS_PRESCRIBE
 
 C Enable OB conditions following Stevens (1990)
 #undef ALLOW_OBCS_STEVENS
 
 C Allow sponge layer treatment of open boundary conditions
-#undef ALLOW_OBCS_SPONGE
+#define ALLOW_OBCS_SPONGE
 
 C Include hooks to sponge layer treatment of pkg/seaice variables
 #undef ALLOW_OBCS_SEAICE_SPONGE
