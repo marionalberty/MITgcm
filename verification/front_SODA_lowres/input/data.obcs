@@ -18,8 +18,8 @@
 # Sponge parameters
  &OBCS_PARM03
  spongeThickness=5.,
- Urelaxobcsinner=30000.,
- Urelaxobcsbound=3000.,
- Vrelaxobcsinner=30000.,
- Vrelaxobcsbound=3000.,
+ Urelaxobcsinner=3000.,
+ Urelaxobcsbound=300.,
+ Vrelaxobcsinner=3000.,
+ Vrelaxobcsbound=300.,
  &
