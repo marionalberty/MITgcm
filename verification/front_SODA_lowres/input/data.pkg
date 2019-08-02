@@ -1,5 +1,4 @@
 # Packages
  &PACKAGES
-  useGMRedi=.FALSE.,
-  useKPP=.FALSE.,
+  useOBCS=.TRUE.,
  &

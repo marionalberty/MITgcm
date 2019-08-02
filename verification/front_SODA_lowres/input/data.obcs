@@ -1,0 +1,25 @@
+# Open-boundaries
+ &OBCS_PARM01
+# The first number should be Nx
+ OB_Jnorth=1*-1.,
+ OB_Jsouth=1*1.,
+ useOBCSprescribe = .TRUE.,
+ useOBCSsponge=.TRUE.,
+ OBNuFile='UVspng.bin',
+ OBNvFile='UVspng.bin',
+ OBNtFile='Tnspng.bin',
+ OBNsFile='Snspng.bin',
+ OBSuFile='UVspng.bin',
+ OBSvFile='UVspng.bin',
+ OBStFile='Tsspng.bin',
+ OBSsFile='Ssspng.bin',
+ &
+
+# Sponge parameters
+ &OBCS_PARM03
+ spongeThickness=5.,
+ Urelaxobcsinner=3000.,
+ Urelaxobcsbound=300.,
+ Vrelaxobcsinner=3000.,
+ Vrelaxobcsbound=300.,
+ &
