@@ -59,7 +59,7 @@
  &PARM05
  bathyFile       = 'topog.bin',
  hydrogThetaFile = 'theta.bin',
- hydrogSaltFile  = 'salt.bin',
+ hydrogSaltFile  = 'salt_noisy.bin',
  uVelInitFile    = 'uvel.bin',
  pSurfInitFile   = 'eta.bin',
  &
