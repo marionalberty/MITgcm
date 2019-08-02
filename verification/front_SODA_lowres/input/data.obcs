@@ -1,8 +1,8 @@
 # Open-boundaries
  &OBCS_PARM01
 # The first number should be Nx
- OB_Jnorth=1*-1.,
- OB_Jsouth=1*1.,
+ OB_Jnorth=100*-1.,
+ OB_Jsouth=100*1.,
  useOBCSprescribe = .TRUE.,
  useOBCSsponge=.TRUE.,
  OBNuFile='UVspng.bin',
@@ -18,8 +18,8 @@
 # Sponge parameters
  &OBCS_PARM03
  spongeThickness=5.,
- Urelaxobcsinner=3000.,
- Urelaxobcsbound=300.,
- Vrelaxobcsinner=3000.,
- Vrelaxobcsbound=300.,
+ Urelaxobcsinner=30000.,
+ Urelaxobcsbound=3000.,
+ Vrelaxobcsinner=30000.,
+ Vrelaxobcsbound=3000.,
  &
