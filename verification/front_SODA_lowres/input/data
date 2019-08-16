@@ -35,14 +35,15 @@
 
 # Time stepping parameters
  &PARM03
- startTime=0.,
- nTimeSteps=360.,
+# startTime=0.,
+ nIter0=0.,
+ nTimeSteps=86400.,
  deltaT=60.,
  cAdjFreq=-1.,
  abEps=0.1,
  pChkptFreq=86400.,
  chkptFreq =600.,
- dumpFreq=3600.,
+ dumpFreq=21600.,
 # monitorSelect=1,
  monitorFreq=1.,
  &
@@ -51,7 +52,7 @@
  &PARM04
  usingCartesianGrid=.TRUE.,
  delRfile = 'dz.bin',
- dXspacing = 200.,
+ dXspacing = 500.,
  delYfile = 'dy.bin',
  &
 
