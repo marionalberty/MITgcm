@@ -1,0 +1,66 @@
+# ====================
+# | Model parameters |
+# ====================
+#
+# Continuous equation parameters
+ &PARM01
+ viscAh=2E0,
+ viscAr=1E-4,
+ no_slip_sides=.FALSE.,
+ no_slip_bottom=.FALSE.,
+ diffKrT=1.E-6,
+ diffKrS=1.E-8,
+ diffKhT=1.E-6,
+ diffKhS=1.E-8,
+ beta=0.E-11,
+ f0  =1.387750E-4,
+ gravity=9.81,
+ eosType='MDJWF',
+ staggerTimeStep=.TRUE.,
+ rigidLid=.FALSE.,
+ implicitFreeSurface=.TRUE.,
+# nonHydrostatic=.TRUE.,
+ tempAdvScheme=33,
+ saltAdvScheme=33,
+ readBinaryPrec=64,
+ writeBinaryPrec=64,
+ useSingleCpuIO=.TRUE.,
+ &
+
+# Elliptic solver parameters
+ &PARM02
+ cg2dMaxIters=1000,
+ cg2dTargetResidual=1.E-13,
+ &
+
+# Time stepping parameters
+ &PARM03
+# startTime=0.,
+ nIter0=0.,
+ nTimeSteps=86400.,
+ deltaT=60.,
+ cAdjFreq=-1.,
+ abEps=0.1,
+ pChkptFreq=86400.,
+ chkptFreq =600.,
+ dumpFreq=21600.,
+# monitorSelect=1,
+ monitorFreq=1.,
+ &
+
+# Gridding parameters
+ &PARM04
+ usingCartesianGrid=.TRUE.,
+ delRfile = 'dz.bin',
+ dXspacing = 50.,
+ delYfile = 'dy.bin',
+ &
+
+# Input datasets
+ &PARM05
+ bathyFile       = 'topog.bin',
+ hydrogThetaFile = 'theta.bin',
+ hydrogSaltFile  = 'salt_noisy.bin',
+ uVelInitFile    = 'uvel.bin',
+ pSurfInitFile   = 'eta.bin',
+ &
