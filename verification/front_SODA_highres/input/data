@@ -36,9 +36,9 @@
 # Time stepping parameters
  &PARM03
 # startTime=0.,
- nIter0=0.,
+ nIter0=259200.,
  nTimeSteps=86400.,
- deltaT=60.,
+ deltaT=10.,
  cAdjFreq=-1.,
  abEps=0.1,
  pChkptFreq=86400.,
