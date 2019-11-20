@@ -4,7 +4,7 @@
 #
 # Continuous equation parameters
  &PARM01
- viscAh=2E0,
+ viscAh=2E-1,
  viscAr=1E-4,
  no_slip_sides=.FALSE.,
  no_slip_bottom=.FALSE.,
@@ -35,8 +35,8 @@
 
 # Time stepping parameters
  &PARM03
-# startTime=0.,
- nIter0=259200.,
+ startTime=0.,
+# nIter0=259200.,
  nTimeSteps=86400.,
  deltaT=10.,
  cAdjFreq=-1.,
