@@ -4,7 +4,7 @@
 #
 # Continuous equation parameters
  &PARM01
- viscAh=2E-1,
+ viscAh=2E-2,
  viscAr=1E-4,
  no_slip_sides=.FALSE.,
  no_slip_bottom=.FALSE.,
@@ -15,11 +15,14 @@
  beta=0.E-11,
  f0  =1.387750E-4,
  gravity=9.81,
+# rhoConstFresh=1000.,
+# temp_EvPrRn=0.,
  eosType='MDJWF',
  staggerTimeStep=.TRUE.,
  rigidLid=.FALSE.,
  implicitFreeSurface=.TRUE.,
 # nonHydrostatic=.TRUE.,
+# useRealFreshWaterFlux=.TRUE.,
  tempAdvScheme=33,
  saltAdvScheme=33,
  readBinaryPrec=64,
@@ -63,4 +66,5 @@
  hydrogSaltFile  = 'salt_noisy.bin',
  uVelInitFile    = 'uvel.bin',
  pSurfInitFile   = 'eta.bin',
+# EmPmRFile	 = 'melt_XXX.bin',
  &
