@@ -4,7 +4,7 @@
 #
 # Continuous equation parameters
  &PARM01
- viscAh=2E-2,
+ viscAh=2E-3,
  viscAr=1E-4,
  no_slip_sides=.FALSE.,
  no_slip_bottom=.FALSE.,
@@ -54,9 +54,9 @@
 # Gridding parameters
  &PARM04
  usingCartesianGrid=.TRUE.,
- delRfile = 'dz.bin',
+ delRfile  = 'dz.bin',
  dXspacing = 500.,
- delYfile = 'dy.bin',
+ dYspacing = 500.,
  &
 
 # Input datasets
