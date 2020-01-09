@@ -4,7 +4,7 @@
 #
 # Continuous equation parameters
  &PARM01
- viscAh=2E-3,
+ viscAh=1E-4,
  viscAr=1E-4,
  no_slip_sides=.FALSE.,
  no_slip_bottom=.FALSE.,
@@ -48,7 +48,7 @@
  chkptFreq =600.,
  dumpFreq=21600.,
 # monitorSelect=1,
- monitorFreq=1.,
+ monitorFreq=600.,
  &
 
 # Gridding parameters
