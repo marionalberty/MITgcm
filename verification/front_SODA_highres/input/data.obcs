@@ -1,8 +1,8 @@
 # Open-boundaries
  &OBCS_PARM01
 # The first number should be Nx
- OB_Jnorth=2000*-1.,
- OB_Jsouth=2000*1.,
+ OB_Jnorth=1000*-1.,
+ OB_Jsouth=1000*1.,
  useOBCSprescribe = .TRUE.,
  useOBCSsponge=.TRUE.,
  OBNuFile='UVspng.bin',
