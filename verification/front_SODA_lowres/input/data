@@ -66,5 +66,4 @@
  hydrogSaltFile  = 'salt_noisy.bin',
  uVelInitFile    = 'uvel.bin',
  pSurfInitFile   = 'eta.bin',
-# EmPmRFile	 = 'melt_XXX.bin',
  &
