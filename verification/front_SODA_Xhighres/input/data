@@ -35,8 +35,7 @@
 
 # Time stepping parameters
  &PARM03
-# startTime=0.,
- nIter0=432000.,
+ nIter0=0.,
  nTimeSteps=86400.,
  deltaT=10.,
  cAdjFreq=-1.,
@@ -52,8 +51,8 @@
  &PARM04
  usingCartesianGrid=.TRUE.,
  delRfile  = 'dz.bin',
- dXspacing = 100.,
- dYspacing = 100.,
+ dXspacing = 50.,
+ dYspacing = 50.,
  &
 
 # Input datasets
