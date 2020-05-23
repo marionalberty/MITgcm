@@ -35,9 +35,8 @@
 
 # Time stepping parameters
  &PARM03
-# startTime=0.,
- nIter0=432000.,
- nTimeSteps=86400.,
+ nIter0=0.,
+ nTimeSteps=172800.,
  deltaT=10.,
  cAdjFreq=-1.,
  abEps=0.1,
@@ -60,7 +59,6 @@
  &PARM05
  bathyFile       = 'topog.bin',
  hydrogThetaFile = 'theta.bin',
- hydrogSaltFile  = 'salt_noisy.bin',
- uVelInitFile    = 'uvel.bin',
- pSurfInitFile   = 'eta.bin',
+ hydrogSaltFile  = 'salt.bin',
+ EmPmRFile       = 'melt_XXX.bin',
  &
