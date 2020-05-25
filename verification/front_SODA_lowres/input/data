@@ -15,14 +15,11 @@
  beta=0.E-11,
  f0  =1.387750E-4,
  gravity=9.81,
-# rhoConstFresh=1000.,
-# temp_EvPrRn=0.,
  eosType='MDJWF',
  staggerTimeStep=.TRUE.,
  rigidLid=.FALSE.,
  implicitFreeSurface=.TRUE.,
 # nonHydrostatic=.TRUE.,
-# useRealFreshWaterFlux=.TRUE.,
  tempAdvScheme=33,
  saltAdvScheme=33,
  readBinaryPrec=64,
@@ -38,7 +35,6 @@
 
 # Time stepping parameters
  &PARM03
-# startTime=0.,
  nIter0=0.,
  nTimeSteps=86400.,
  deltaT=60.,
