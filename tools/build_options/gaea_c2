@@ -18,7 +18,7 @@ INCLUDES="-I${MPICH_DIR}/include"
 LIBS='-lfmpich -lmpich'
 
 FFLAGS="$FFLAGS -byteswapio -Mnodclchk"
-FOPTIM='-tp k8-64 -pc=64 -fastsse -O3 -Msmart'
+FOPTIM='-tp k8-64 -pc=64 -fastsse -O3 -Mlarge_arrays'
 # -Mvect=cachesize:512000,transform
 #- might want to use '-r8' for fizhi pkg:
 #FFLAGS="$FFLAGS -r8"
