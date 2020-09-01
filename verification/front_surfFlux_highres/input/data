@@ -63,5 +63,5 @@
  hydrogThetaFile = 'theta.bin',
  hydrogSaltFile  = 'salt_noisy.bin',
  EmPmRFile       = 'M_dT1e-01C.bin',
- surfQfile	 = 'Q_dT1e-01c.bin',
+ surfQfile	 = 'Q_dT1e-01C.bin',
  &
