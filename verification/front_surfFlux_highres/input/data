@@ -16,7 +16,7 @@
  f0  =1.387750E-4,
  gravity=9.81,
 # rhoConstFresh=1000.,
- temp_EvPrRn=0.,
+# temp_EvPrRn=0.,
  eosType='MDJWF',
  staggerTimeStep=.TRUE.,
  rigidLid=.FALSE.,
@@ -38,13 +38,13 @@
 # Time stepping parameters
  &PARM03
  nIter0=0.,
- nTimeSteps=86400.,
+ nTimeSteps=360.,
  deltaT=10.,
  cAdjFreq=-1.,
  abEps=0.1,
  pChkptFreq=86400.,
  chkptFreq=600.,
- dumpFreq=21600.,
+ dumpFreq=3600.,
 # monitorSelect=1,
  monitorFreq=600.,
  &
@@ -62,6 +62,6 @@
  bathyFile       = 'topog.bin',
  hydrogThetaFile = 'theta.bin',
  hydrogSaltFile  = 'salt_noisy.bin',
- EmPmRFile       = 'M_dT1e-01C.bin',
- surfQfile	 = 'Q_dT1e-01C.bin',
+# EmPmRFile      = 'M_dT1e-01C.bin',
+# surfQfile	 = 'Q_dT1e-01C.bin',
  &
