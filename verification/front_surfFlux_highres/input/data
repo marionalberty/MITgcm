@@ -14,14 +14,10 @@
  diffKhS=1.E-8,
  beta=0.E-11,
  f0  =1.387750E-4,
- gravity=9.81,
 # rhoConstFresh=1000.,
 # temp_EvPrRn=0.,
  eosType='MDJWF',
  staggerTimeStep=.TRUE.,
- rigidLid=.FALSE.,
- implicitFreeSurface=.TRUE.,
-# nonHydrostatic=.TRUE.,
  tempAdvScheme=33,
  saltAdvScheme=33,
  readBinaryPrec=64,
@@ -51,7 +47,6 @@
 
 # Gridding parameters
  &PARM04
- usingCartesianGrid=.TRUE.,
  delRfile  = 'dz.bin',
  dXspacing = 100.,
  dYspacing = 100.,
@@ -63,5 +58,5 @@
  hydrogThetaFile = 'theta.bin',
  hydrogSaltFile  = 'salt_noisy.bin',
 # EmPmRFile      = 'M_dT1e-01C.bin',
-# surfQfile	 = 'Q_dT1e-01C.bin',
+# surfQnetFile	 = 'Q_dT1e-01C.bin',
  &
