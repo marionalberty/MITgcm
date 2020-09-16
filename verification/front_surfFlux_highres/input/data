@@ -41,7 +41,6 @@
  pChkptFreq=86400.,
  chkptFreq=600.,
  dumpFreq=3600.,
-# monitorSelect=1,
  monitorFreq=600.,
  &
 
@@ -58,5 +57,5 @@
  hydrogThetaFile = 'theta.bin',
  hydrogSaltFile  = 'salt_noisy.bin',
 # EmPmRFile      = 'M_dT1e-01C.bin',
-# surfQnetFile	 = 'Q_dT1e-01C.bin',
+ surfQnetFile	 = 'Q_dT1e-01C.bin',
  &
