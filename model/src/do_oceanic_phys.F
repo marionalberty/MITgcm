@@ -75,6 +75,8 @@ C       |-- FREEZE_SURFACE
 C       |
 C       |-- EXTERNAL_FORCING_SURF
 C       |
+C       |-- OBCS_ADJUST
+C       |
 C       |- k loop (Nr:1):
 C       | - DWNSLP_CALC_RHO
 C       | - BBL_CALC_RHO
@@ -284,18 +286,19 @@ C jmc: moved here before any freezing/seaice pkg adjustment of surf-fluxes
 #endif /* ALLOW_OCN_COMPON_INTERF */
 
 #ifdef ALLOW_AUTODIFF
-# ifdef ALLOW_SALT_PLUME
       DO bj=myByLo(myThid),myByHi(myThid)
        DO bi=myBxLo(myThid),myBxHi(myThid)
         DO j=1-OLy,sNy+OLy
          DO i=1-OLx,sNx+OLx
+          adjustColdSST_diag(i,j,bi,bj) = 0. _d 0
+# ifdef ALLOW_SALT_PLUME
           saltPlumeDepth(i,j,bi,bj) = 0. _d 0
           saltPlumeFlux(i,j,bi,bj)  = 0. _d 0
+# endif
          ENDDO
         ENDDO
        ENDDO
       ENDDO
-# endif
 #endif /* ALLOW_AUTODIFF */
 
 #if (defined (ALLOW_SIGMAR_COST_CONTRIBUTION) || defined (ALLOW_LEITH_QG))
@@ -546,6 +549,18 @@ C     and all vertical mixing schemes, but keep OBCS_CALC
         CALL EXTERNAL_FORCING_SURF(
      I             iMin, iMax, jMin, jMax,
      I             myTime, myIter, myThid )
+
+#ifdef  ALLOW_OBCS
+      IF (useOBCS) THEN
+C--   After all surface fluxes are known apply balancing fluxes and
+C--   apply tidal forcing to open boundaries
+# ifdef ALLOW_DEBUG
+       IF (debugMode) CALL DEBUG_CALL('OBCS_ADJUST',myThid)
+# endif
+       CALL OBCS_ADJUST(
+     I      myTime+deltaTClock, myIter+1, myThid )
+      ENDIF
+#endif  /* ALLOW_OBCS */
 
 #ifdef ALLOW_AUTODIFF_TAMC
 C--   HPF directive to help TAMC
@@ -913,8 +928,6 @@ CADJ &     = comlev1_bibj, key=itdkey, kind=isbyte
 CADJ STORE surfaceForcingS(:,:,bi,bj)
 CADJ &     = comlev1_bibj, key=itdkey, kind=isbyte
 CADJ STORE surfaceForcingT(:,:,bi,bj)
-CADJ &     = comlev1_bibj, key=itdkey, kind=isbyte
-CADJ STORE surfaceForcingTice(:,:,bi,bj)
 CADJ &     = comlev1_bibj, key=itdkey, kind=isbyte
 #endif /* ALLOW_AUTODIFF_TAMC */
 
