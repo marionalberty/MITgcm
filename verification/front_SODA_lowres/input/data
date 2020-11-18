@@ -15,6 +15,7 @@
  beta=0.E-11,
  f0  =1.387750E-4,
  gravity=9.81,
+ rhoConst=1028.,
  eosType='MDJWF',
  staggerTimeStep=.TRUE.,
  rigidLid=.FALSE.,
