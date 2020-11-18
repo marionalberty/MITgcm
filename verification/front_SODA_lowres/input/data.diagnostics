@@ -47,16 +47,14 @@
  filename(4) = '2d_diags',
 
 # Momentum budget terms
- fields(1:16,5) = 'TOTUTEND','TOTVTEND',
-                  'Um_Advec','Vm_Advec','Um_dPHdx','Vm_dPHdy',
-                  'Um_Ext  ','Vm_Ext  ','Um_Diss ','Vm_Diss ',
+ fields(1:18,5) = 'TOTUTEND','TOTVTEND','Um_Advec','Vm_Advec',
+                  'Um_Diss ','Vm_Diss ','Um_Cori ','Vm_Cori ',
+                  'Um_dPhiX','Vm_dPhiY','VISrI_Um','VISrI_Vm',
+		  'Um_AdvZ3','Vm_AdvZ3','Um_AdvRe','Vm_AdvRe',
                   'Um_ImplD','Vm_ImplD',
-                  'AB_gU   ','AB_gV   ',
-                  'VISrI_Um','VISrI_Vm',
-#                 'UBotDrag','VBotDrag',
-#                 'Um_Cori ','Vm_Cori ','Um_AdvZ3','Vm_AdvZ3',
-#                 'Um_AdvRe','Vm_AdvRe','USidDrag','VSidDrag',
-#                 'Um_dPhiX','Vm_dPhiY','momKE   ',
+#                 'AB_gU   ','AB_gV   ','Um_Ext  ','Vm_Ext  ',
+#                 'USidDrag','VSidDrag','UBotDrag','VBotDrag',
+#                 'momKE   ',
  frequency(5) = 21600.,
  filename(5) = 'momentum_3D',
  &
