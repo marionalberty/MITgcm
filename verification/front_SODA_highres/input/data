@@ -15,6 +15,7 @@
  beta=0.E-11,
  f0  =1.387750E-4,
  gravity=9.81,
+ rhoConst=1028.,
  eosType='MDJWF',
  staggerTimeStep=.TRUE.,
  rigidLid=.FALSE.,
@@ -35,9 +36,8 @@
 
 # Time stepping parameters
  &PARM03
-# startTime=0.,
- nIter0=432000.,
- nTimeSteps=86400.,
+ nIter0=0.,
+ nTimeSteps=172800., # 20 days
  deltaT=10.,
  cAdjFreq=-1.,
  abEps=0.1,
