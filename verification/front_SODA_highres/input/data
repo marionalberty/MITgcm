@@ -36,9 +36,9 @@
 
 # Time stepping parameters
  &PARM03
- nIter0=0.,
-# 20 days
- nTimeSteps=172800.,
+ nIter0=432000.,
+# 10 days
+ nTimeSteps=86400.,
  deltaT=10.,
  cAdjFreq=-1.,
  abEps=0.1,
