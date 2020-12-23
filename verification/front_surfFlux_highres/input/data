@@ -14,7 +14,7 @@
  diffKhS=1.E-8,
  beta=0.E-11,
  f0  =1.387750E-4,
-# temp_EvPrRn=0.,
+ temp_EvPrRn=0.,
  eosType='MDJWF',
  staggerTimeStep=.TRUE.,
  tempAdvScheme=33,
@@ -56,5 +56,5 @@
  hydrogThetaFile = 'theta.bin',
  hydrogSaltFile  = 'salt_noisy.bin',
  EmPmRFile       = 'M_dT5e+00C.bin',
- surfQnetFile	 = 'Q_dT5e+00C.bin',
+# surfQnetFile	 = 'Q_dT5e+00C.bin',
  &
