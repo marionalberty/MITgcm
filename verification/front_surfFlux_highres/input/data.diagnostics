@@ -42,7 +42,7 @@
  filename(3) = 'state',
 
 # 2D diagnostics
- fields(1:3,4) = 'ETAN ', 'TFLUX', 'SFLUX',
+ fields(1:3,4) = 'ETAN', 'TRELAX', 'SRELAX',
  frequency(4) = 21600.,
  filename(4) = '2d_diags',
 
