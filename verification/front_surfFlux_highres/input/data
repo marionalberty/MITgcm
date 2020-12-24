@@ -6,7 +6,7 @@
  &PARM01
  viscAh=1E-4,
  viscAr=1E-4,
- no_slip_sides=.FALSE.,
+# no_slip_sides=.FALSE.,
  no_slip_bottom=.FALSE.,
  diffKrT=1.E-6,
  diffKrS=1.E-8,
@@ -33,8 +33,7 @@
 # Time stepping parameters
  &PARM03
  nIter0=0.,
- # 10 days
- nTimeSteps=86400.,
+ nTimeSteps=8640.,
  deltaT=10.,
  cAdjFreq=-1.,
  abEps=0.1,
