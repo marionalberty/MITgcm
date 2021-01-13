@@ -92,7 +92,7 @@ C   that ensures that d/dt(eta) is exactly equal to - Div.Transport
 
 C o Allow the use of Non-Linear Free-Surface formulation
 C   this implies that grid-cell thickness (hFactors) varies with time
-#undef NONLIN_FRSURF
+#define NONLIN_FRSURF
 
 C o Include/exclude nonHydrostatic code
 #undef ALLOW_NONHYDROSTATIC

@@ -16,6 +16,7 @@
  f0  =1.387750E-4,
  temp_EvPrRn=0.,
  eosType='MDJWF',
+ nonLinFreeSurf=4,
  staggerTimeStep=.TRUE.,
  tempAdvScheme=33,
  saltAdvScheme=33,
@@ -33,7 +34,8 @@
 # Time stepping parameters
  &PARM03
  nIter0=0.,
- nTimeSteps=8640.,
+# 20 days
+ nTimeSteps=172800.,
  deltaT=10.,
  cAdjFreq=-1.,
  abEps=0.1,
