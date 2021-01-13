@@ -58,5 +58,6 @@
  hydrogThetaFile = 'theta.bin',
  hydrogSaltFile  = 'salt_noisy.bin',
  EmPmRFile       = 'M_dT5e+00C.bin',
+ diffKrFile 	 = '3Ddiff.bin',
 # surfQnetFile	 = 'Q_dT5e+00C.bin',
  &
