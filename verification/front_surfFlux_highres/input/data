@@ -17,6 +17,8 @@
  temp_EvPrRn=0.,
  eosType='MDJWF',
  nonLinFreeSurf=4,
+ exactConserv=.TRUE.,
+ useRealFreshWaterFlux=.TRUE.,
  staggerTimeStep=.TRUE.,
  tempAdvScheme=33,
  saltAdvScheme=33,
