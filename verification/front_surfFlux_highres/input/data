@@ -34,8 +34,8 @@
 # Time stepping parameters
  &PARM03
  nIter0=0.,
-# 20 days
- nTimeSteps=172800.,
+# 10 days
+ nTimeSteps=86400.,
  deltaT=10.,
  cAdjFreq=-1.,
  abEps=0.1,
@@ -47,6 +47,7 @@
 
 # Gridding parameters
  &PARM04
+ usingCartesianGrid=.TRUE.,
  delRfile  = 'dz.bin',
  dXspacing = 100.,
  dYspacing = 100.,
@@ -58,6 +59,6 @@
  hydrogThetaFile = 'theta.bin',
  hydrogSaltFile  = 'salt_noisy.bin',
  EmPmRFile       = 'M_dT5e+00C.bin',
- diffKrFile 	 = '3Ddiff.bin',
+# diffKrFile 	 = '3Ddiff.bin',
 # surfQnetFile	 = 'Q_dT5e+00C.bin',
  &
