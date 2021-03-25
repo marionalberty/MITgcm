@@ -20,7 +20,7 @@
  staggerTimeStep=.TRUE.,
  rigidLid=.FALSE.,
  implicitFreeSurface=.TRUE.,
-# nonHydrostatic=.TRUE.,
+ nonHydrostatic=.TRUE.,
  tempAdvScheme=33,
  saltAdvScheme=33,
  readBinaryPrec=64,
@@ -32,13 +32,15 @@
  &PARM02
  cg2dMaxIters=1000,
  cg2dTargetResidual=1.E-13,
+ cg3dMaxIters=40,
+ cg3dTargetResidual=1.E-9,
  &
 
 # Time stepping parameters
  &PARM03
- nIter0=432000.,
-# 10 days
- nTimeSteps=86400.,
+ nIter0=0.,
+# 1 hour 
+ nTimeSteps=360.,
  deltaT=10.,
  cAdjFreq=-1.,
  abEps=0.1,
@@ -60,8 +62,9 @@
 # Input datasets
  &PARM05
  bathyFile       = 'topog.bin',
- hydrogThetaFile = 'theta.bin',
- hydrogSaltFile  = 'salt_noisy.bin',
- uVelInitFile    = 'uvel.bin',
- pSurfInitFile   = 'eta.bin',
+ hydrogThetaFile = 'theta_nh.bin',
+ hydrogSaltFile  = 'salt_nh.bin',
+ uVelInitFile    = 'uvel_nh.bin',
+ vVelInitFile	 = 'vvel_nh.bin',
+ pSurfInitFile   = 'eta_nh.bin',
  &
