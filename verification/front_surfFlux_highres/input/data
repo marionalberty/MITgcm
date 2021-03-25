@@ -35,9 +35,9 @@
 
 # Time stepping parameters
  &PARM03
- nIter0=0.,
-# 10 days
- nTimeSteps=86400.,
+ nIter0=345600.,
+# 20 days
+ nTimeSteps=172800.,
  deltaT=10.,
  cAdjFreq=-1.,
  abEps=0.1,
@@ -60,7 +60,7 @@
  bathyFile       = 'topog.bin',
  hydrogThetaFile = 'theta.bin',
  hydrogSaltFile  = 'salt_noisy.bin',
- EmPmRFile       = 'M_dT5e+00C.bin',
+ EmPmRFile       = 'M_dT1e-01C.bin',
 # diffKrFile 	 = '3Ddiff.bin',
 # surfQnetFile	 = 'Q_dT5e+00C.bin',
  &
