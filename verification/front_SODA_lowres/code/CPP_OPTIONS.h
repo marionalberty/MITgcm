@@ -95,7 +95,7 @@ C   this implies that grid-cell thickness (hFactors) varies with time
 #undef NONLIN_FRSURF
 
 C o Include/exclude nonHydrostatic code
-#undef ALLOW_NONHYDROSTATIC
+#define ALLOW_NONHYDROSTATIC
 
 C o Include/exclude GM-like eddy stress in momentum code
 #undef ALLOW_EDDYPSI
