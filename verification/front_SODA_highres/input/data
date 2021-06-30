@@ -39,8 +39,8 @@
 # Time stepping parameters
  &PARM03
  nIter0=0.,
-# 1 hour 
- nTimeSteps=360.,
+# 10 days 
+ nTimeSteps=86400.,
  deltaT=10.,
  cAdjFreq=-1.,
  abEps=0.1,
@@ -55,16 +55,16 @@
  &PARM04
  usingCartesianGrid=.TRUE.,
  delRfile  = 'dz.bin',
- dXspacing = 100.,
- dYspacing = 100.,
+ dXspacing = 50.,
+ dYspacing = 50.,
  &
 
 # Input datasets
  &PARM05
  bathyFile       = 'topog.bin',
- hydrogThetaFile = 'theta_nh.bin',
- hydrogSaltFile  = 'salt_nh.bin',
- uVelInitFile    = 'uvel_nh.bin',
- vVelInitFile	 = 'vvel_nh.bin',
- pSurfInitFile   = 'eta_nh.bin',
+ hydrogThetaFile = 'theta_xhr.bin',
+ hydrogSaltFile  = 'salt_noisy_xhr.bin',
+ uVelInitFile    = 'uvel_xhr.bin',
+# vVelInitFile	 = 'vvel_xhr.bin',
+ pSurfInitFile   = 'eta_xhr.bin',
  &
