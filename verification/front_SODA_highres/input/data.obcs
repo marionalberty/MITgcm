@@ -5,14 +5,14 @@
  OB_Jsouth=1000*1.,
  useOBCSprescribe = .TRUE.,
  useOBCSsponge=.TRUE.,
- OBNuFile='UVspng.bin',
- OBNvFile='UVspng.bin',
- OBNtFile='Tnspng.bin',
- OBNsFile='Snspng.bin',
- OBSuFile='UVspng.bin',
- OBSvFile='UVspng.bin',
- OBStFile='Tsspng.bin',
- OBSsFile='Ssspng.bin',
+ OBNuFile='UVspng_xhr.bin',
+ OBNvFile='UVspng_xhr.bin',
+ OBNtFile='Tnspng_xhr.bin',
+ OBNsFile='Snspng_xhr.bin',
+ OBSuFile='UVspng_xhr.bin',
+ OBSvFile='UVspng_xhr.bin',
+ OBStFile='Tsspng_xhr.bin',
+ OBSsFile='Ssspng_xhr.bin',
  &
 
 # Sponge parameters
